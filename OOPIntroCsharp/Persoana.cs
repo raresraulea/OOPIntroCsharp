@@ -1,6 +1,6 @@
 ﻿namespace OOPIntroCsharp
 {
-    public class Persoana
+    public class Persoana:IHasExport
     {
         protected int yearOfBirth;
         protected string name;
@@ -20,5 +20,7 @@
         {
             System.Console.WriteLine(name + " - " + yearOfBirth);
         }
+
+        public void Export() { }
     }
 }
